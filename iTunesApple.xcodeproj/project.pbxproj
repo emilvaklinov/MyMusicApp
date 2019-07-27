@@ -58,6 +58,8 @@
 		0312B8FA22ECD516005D852E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				035EAF8022A1C9B50082D145 /* Media.swift */,
+				035EAF8222A1C9CE0082D145 /* Swag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				0312B8FA22ECD516005D852E /* Model */,
-				035EAF8022A1C9B50082D145 /* Media.swift */,
-				035EAF8222A1C9CE0082D145 /* Swag.swift */,
 				0312B8F922ECD4EA005D852E /* Components */,
 				035EAF6C22A1C8630082D145 /* AppDelegate.swift */,
 				035EAF6E22A1C8630082D145 /* MediaListViewController.swift */,

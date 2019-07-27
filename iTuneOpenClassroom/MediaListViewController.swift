@@ -17,13 +17,50 @@ class MediaListViewController: UIViewController {
         super.viewDidLoad()
         
         config()
+        loadData()
     }
+    
+    // Loading api data
+    func loadData() {
+        MediaService.getMediaList(term: "mix") { (success, list) in
+            
+            if success, let list = list {
+                DataManager.shared.mediaList = list
+                
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+
+            }
+            else {
+                // show no data alert
+                    self.presentNoDataAlert(title: "Oops, something happened...",
+                                            message: "Couldn't load any fun stuff for you:(")
+                
+            }
+            
+        }
+    }
+    
+    func presentNoDataAlert(title: String?, message: String?) {
+        let alertController = UIAlertController(title: title,
+                                                message: message,
+                                                preferredStyle: .alert)
+        
+        let dismissAction = UIAlertAction(title: "Got it", style: .cancel, handler: { (action) -> Void in
+        })
+        
+        alertController.addAction(dismissAction)
+        present(alertController, animated: true)
+    }
+    
+    
     
     func config() {
         navigationItem.title = "Now ListenUp!"
         
         
-        view.backgroundColor = .sunshine
+        view.backgroundColor = .red
         view.backgroundColor = UIColor.UIPalette.backgroundColor
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -48,6 +85,24 @@ extension MediaListViewController: UICollectionViewDataSource {
         let mediaBrief = dataSource[indexPath.item]
         cell.populate(mediaBrief: mediaBrief)
         
+        // to load the image into the cell
+        if let artworkData = mediaBrief.artworkData,
+            let artwork = UIImage(data: artworkData) {
+            cell.setImage(image: artwork)
+        }
+        else if let imageURL = URL(string: mediaBrief.artworkUrl) {
+            MediaService.getImage(imageUrl: imageURL, completion: { (success, imageData) in
+                if success, let imageData = imageData,
+                    let artwork = UIImage(data: imageData) {
+                    mediaBrief.artworkData = imageData
+                    DispatchQueue.main.async {
+                        cell.setImage(image: artwork)
+                    }
+                    
+                }
+            })
+        }
+        
         return cell
     }
     
@@ -71,7 +126,7 @@ extension MediaListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let w = collectionView.frame.size.width
-        return CGSize(width: (w - 20)/2, height: 290)
+        return CGSize(width: (w - 20)/2, height: 310)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -89,7 +144,7 @@ extension UIColor {
     static let forest = UIColor.green
     
     struct UIPalette {
-        static let backgroundColor = UIColor.sunshine
+        static let backgroundColor = UIColor.red
         static let titleColor = UIColor.forest
         static let subtitleColor = UIColor.blue
 

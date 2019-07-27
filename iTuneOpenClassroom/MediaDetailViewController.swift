@@ -28,9 +28,71 @@ class MediaDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadData()
         // Do any additional setup after loading the view.
+        view.backgroundColor = .red
+        view.backgroundColor = UIColor.UIPaletteTwo.backgroundColor
     }
+    
+    func loadData() {
+        
+        MediaService.getMedia(id: mediaId) { (success, media) in
+            if success, let media = media {
+                self.media = media
+                self.swag = DataManager.shared.swagForMedia(media)
+                DispatchQueue.main.async {
+                    self.populateMedia()
+                    self.populateSwag()
+                }
+            }
+            else {
+                self.presentNoDataAlert(title: "Oops, something happened...",
+                                        message: "Couldn't load media details")
+            }
+        }
+        
+    }
+    
+    func populateMedia() {
+        guard let media = self.media else {
+            return
+        }
+        
+        titleLabel.text = media.title
+        artistLabel.text = media.artistName
+        collectionLabel.text = media.collection
+        
+        if let imageURL = URL(string: media.artworkUrl) {
+            MediaService.getImage(imageUrl: imageURL, completion: { (success, imageData) in
+                if success, let imageData = imageData,
+                    let artwork = UIImage(data: imageData) {
+                    DispatchQueue.main.async {
+                        self.artworkImageView.image = artwork
+                    }
+                }
+            })
+        }
+    }
+    
+    func populateSwag() {
+        guard let swag = self.swag else {
+            return
+        }
+        
+        swagImageLabel.text = swag.title
+        
+        if let imageURL = URL(string: swag.artworkUrl) {
+            MediaService.getImage(imageUrl: imageURL, completion: { (success, imageData) in
+                if success, let imageData = imageData,
+                    let artwork = UIImage(data: imageData) {
+                    DispatchQueue.main.async {
+                        self.swagImageView.image = artwork
+                    }
+                }
+            })
+        }
+    }
+    
     
     func openURL(sourceUrl: String?) {
         if let sourceUrl = sourceUrl, let url = URL(string: sourceUrl) {
@@ -60,5 +122,21 @@ class MediaDetailViewController: UIViewController {
     
     @IBAction func swagTapped(_ sender: Any) {
         openURL(sourceUrl: swag?.sourceUrl)
+    }
+    
+    
+}
+
+extension UIColor {
+    
+    static let sunshineTwo = UIColor.yellow
+    static let forestTwo = UIColor.green
+    
+    struct UIPaletteTwo {
+        static let backgroundColor = UIColor.red
+        static let titleColor = UIColor.forest
+        static let subtitleColor = UIColor.blue
+        
+        
     }
 }
