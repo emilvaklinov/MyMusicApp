@@ -64,6 +64,7 @@ class MediaService {
                             
                             list.append(mediaBrief)
                         }
+                        
                     }
                     
                     completion(true, list)
@@ -76,6 +77,7 @@ class MediaService {
             }
         }
         task.resume()
+        
     }
     
     static func getMedia(id: Int, completion: @escaping (Bool, Media?) -> Void) {
