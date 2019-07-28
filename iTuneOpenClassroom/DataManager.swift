@@ -28,7 +28,7 @@ class DataManager {
     
     func swagForMedia(_ media: Media?) -> Swag? {
         let swag = Swag(id: 0,
-                        title: "Click for Cool stuff!",
+                        title: "Cool MusicHub!",
                         artworkUrl: "https://i.postimg.cc/gkVBsrVD/itunes-macos-icon-240.png",
                         sourceUrl: "https://www.musixhub.com")
         return swag

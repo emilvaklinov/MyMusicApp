@@ -18,6 +18,7 @@
 		035EAF8322A1C9CE0082D145 /* Swag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EAF8222A1C9CE0082D145 /* Swag.swift */; };
 		035EAF8522A1CD4B0082D145 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EAF8422A1CD4B0082D145 /* DataManager.swift */; };
 		035EAF8722A1CD690082D145 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EAF8622A1CD690082D145 /* MediaService.swift */; };
+		0387C17922ED22CB008F5698 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0387C17822ED22CB008F5698 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		035EAF8222A1C9CE0082D145 /* Swag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swag.swift; sourceTree = "<group>"; };
 		035EAF8422A1CD4B0082D145 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		035EAF8622A1CD690082D145 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		0387C17822ED22CB008F5698 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		035EAF6022A1C8630082D145 = {
 			isa = PBXGroup;
 			children = (
+				0387C17822ED22CB008F5698 /* Default-568h@2x.png */,
 				035EAF6B22A1C8630082D145 /* iTuneOpenClassroom */,
 				035EAF6A22A1C8630082D145 /* Products */,
 			);
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				035EAF7722A1C8670082D145 /* LaunchScreen.storyboard in Resources */,
+				0387C17922ED22CB008F5698 /* Default-568h@2x.png in Resources */,
 				035EAF7422A1C8670082D145 /* Assets.xcassets in Resources */,
 				035EAF7222A1C8630082D145 /* Main.storyboard in Resources */,
 			);
@@ -323,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2RQK3JX6CU;
 				INFOPLIST_FILE = iTuneOpenClassroom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2RQK3JX6CU;
 				INFOPLIST_FILE = iTuneOpenClassroom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

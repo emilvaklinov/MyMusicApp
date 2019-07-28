@@ -126,7 +126,7 @@ extension MediaListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let w = collectionView.frame.size.width
-        return CGSize(width: (w - 20)/2, height: 310)
+        return CGSize(width: (w - 20)/2, height: 300)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
