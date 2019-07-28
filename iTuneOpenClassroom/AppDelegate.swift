@@ -1,4 +1,10 @@
-
+//
+//  iTunesAppleTests.swift
+//  iTunesAppleTests
+//
+//  Created by Emil Vaklinov on 28/07/2019.
+//  Copyright © 2019 project. All rights reserved.
+//
 
 import UIKit
 
