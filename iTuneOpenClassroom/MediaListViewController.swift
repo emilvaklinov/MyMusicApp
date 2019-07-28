@@ -57,7 +57,7 @@ class MediaListViewController: UIViewController {
     
     
     func config() {
-        navigationItem.title = "Now ListenUp!"
+        navigationItem.title = "Now Listen!"
         
         
         view.backgroundColor = .red
