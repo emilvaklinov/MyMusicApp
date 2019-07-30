@@ -151,15 +151,31 @@
 				0312B8F922ECD4EA005D852E /* Components */,
 				035EAF6C22A1C8630082D145 /* AppDelegate.swift */,
 				035EAF8422A1CD4B0082D145 /* DataManager.swift */,
-				035EAF7822A1C8670082D145 /* Info.plist */,
-				035EAF6E22A1C8630082D145 /* MediaListViewController.swift */,
-				035EAF7E22A1C8EB0082D145 /* MediaDetailViewController.swift */,
 				035EAF8622A1CD690082D145 /* MediaService.swift */,
-				035EAF7022A1C8630082D145 /* Main.storyboard */,
+				035EAF7822A1C8670082D145 /* Info.plist */,
 				035EAF7322A1C8670082D145 /* Assets.xcassets */,
-				035EAF7522A1C8670082D145 /* LaunchScreen.storyboard */,
+				03DE0D8122F0FE4500CBE798 /* Controllers */,
+				03DE0D8222F0FE6500CBE798 /* View */,
 			);
 			path = iTuneOpenClassroom;
+			sourceTree = "<group>";
+		};
+		03DE0D8122F0FE4500CBE798 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				035EAF6E22A1C8630082D145 /* MediaListViewController.swift */,
+				035EAF7E22A1C8EB0082D145 /* MediaDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03DE0D8222F0FE6500CBE798 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				035EAF7022A1C8630082D145 /* Main.storyboard */,
+				035EAF7522A1C8670082D145 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

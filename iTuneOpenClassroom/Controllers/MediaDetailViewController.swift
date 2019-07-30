@@ -9,7 +9,7 @@
 import UIKit
 
 class MediaDetailViewController: UIViewController {
-
+    
     
     @IBOutlet weak var artworkImageView: UIImageView!
     
