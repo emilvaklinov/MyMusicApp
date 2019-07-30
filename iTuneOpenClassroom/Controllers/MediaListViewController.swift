@@ -19,6 +19,7 @@ class MediaListViewController: UIViewController {
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,6 +74,8 @@ class MediaListViewController: UIViewController {
         
         collectionViewFlowLayout.scrollDirection = .vertical
     }
+    
+    
     
 }
 
