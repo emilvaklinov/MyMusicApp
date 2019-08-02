@@ -16,6 +16,7 @@ class MediaListViewController: UIViewController {
     }
 
 
+
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -25,6 +26,7 @@ class MediaListViewController: UIViewController {
         
         config()
         loadData()
+    
     }
     
     // Loading api data

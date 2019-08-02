@@ -8,15 +8,16 @@
 
 import Foundation
 
-import Foundation
-
 class DataManager {
     
+    // initializing the data manager
     static let shared = DataManager()
     
+    // Singleton patern allows us to have only one instance of an object throughout the whole app.
     private init() {
     }
     
+    // lazi to be initialized of the first request and store temporary items
     lazy var mediaList: [MediaBrief] = {
         var list = [MediaBrief]()
         
@@ -32,6 +33,8 @@ class DataManager {
         return list
     }()
     
+    
+    // to genetrate swag based on the media item
     func swagForMedia(_ media: Media?) -> Swag? {
         let swag = Swag(id: 0,
                         title: "Cool MusicHub!",

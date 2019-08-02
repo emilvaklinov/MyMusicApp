@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Fetching data
 private struct API {
     private static let base = "https://itunes.apple.com/"
     private static let search = API.base + "search"
@@ -38,6 +39,8 @@ private func createLookupRequest(id: Int) -> URLRequest {
     return createRequest(url: API.lookupURL, params: params)
 }
 
+
+// Deliver media list from the network
 class MediaService {
     static func getMediaList(term: String, completion: @escaping (Bool, [MediaBrief]?) -> Void) {
         
@@ -80,6 +83,7 @@ class MediaService {
         
     }
     
+    // Deliver details of particular media item
     static func getMedia(id: Int, completion: @escaping (Bool, Media?) -> Void) {
         let session = URLSession(configuration: .default)
         let request = createLookupRequest(id: id)

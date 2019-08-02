@@ -38,7 +38,20 @@ class MediaDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .red
         view.backgroundColor = UIColor.UIPaletteTwo.backgroundColor
+//        
+//        artworkImageView.layer.cornerRadius = artworkImageView.frame.size.width / 2;
+//        artworkImageView.transform = CGAffineTransform.init(scaleX: 1.1, y: 1.1)
+        
+        swagImageView.layer.cornerRadius = swagImageView.frame.size.width / 2;
+        swagImageView.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
+
     }
+    
+
+
+    
+    
+
     
     func loadData() {
         
@@ -146,3 +159,5 @@ extension UIColor {
         
     }
 }
+
+
