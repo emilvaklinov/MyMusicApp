@@ -33,8 +33,7 @@ class DataManager {
         return list
     }()
     
-    
-    // to genetrate swag based on the media item
+//     to genetrate swag based on the media item
     func swagForMedia(_ media: Media?) -> Swag? {
         let swag = Swag(id: 0,
                         title: "Cool MusicHub!",

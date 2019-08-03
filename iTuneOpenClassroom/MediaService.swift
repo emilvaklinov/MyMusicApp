@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 // Fetching data
 private struct API {
     private static let base = "https://itunes.apple.com/"
