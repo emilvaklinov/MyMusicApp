@@ -136,8 +136,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3t-wK-d5o">
-                                <rect key="frame" x="129" y="408" width="117" height="33"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="87" y="408" width="195" height="33"/>
+                                <color key="backgroundColor" red="0.6940556765" green="0.69415730239999995" blue="0.69403344389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Play iTunes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -204,11 +204,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="U3t-wK-d5o" firstAttribute="centerX" secondItem="xat-cm-19j" secondAttribute="centerX" id="31o-7d-OxK"/>
+                            <constraint firstItem="U3t-wK-d5o" firstAttribute="centerX" secondItem="xat-cm-19j" secondAttribute="centerX" constant="-3" id="31o-7d-OxK"/>
                             <constraint firstItem="U3t-wK-d5o" firstAttribute="top" secondItem="xat-cm-19j" secondAttribute="bottom" constant="40" id="4T5-1e-3HE"/>
                             <constraint firstItem="xat-cm-19j" firstAttribute="trailing" secondItem="z8B-La-bTX" secondAttribute="trailing" id="6jU-3N-PGT"/>
                             <constraint firstItem="eSa-wr-F0j" firstAttribute="trailing" secondItem="F8M-IL-bWo" secondAttribute="trailing" constant="93" id="AQ4-rP-d4C"/>
-                            <constraint firstItem="U3t-wK-d5o" firstAttribute="centerX" secondItem="Vrf-CK-eyQ" secondAttribute="centerX" id="Iiu-Zl-5bG"/>
+                            <constraint firstItem="U3t-wK-d5o" firstAttribute="centerX" secondItem="Vrf-CK-eyQ" secondAttribute="centerX" constant="-3" id="Iiu-Zl-5bG"/>
                             <constraint firstItem="z8B-La-bTX" firstAttribute="top" secondItem="C09-Be-JP9" secondAttribute="bottom" constant="8" symbolic="YES" id="J0Z-L8-NVK"/>
                             <constraint firstItem="Vrf-CK-eyQ" firstAttribute="bottom" secondItem="eSa-wr-F0j" secondAttribute="bottom" id="Kl9-uL-GA3"/>
                             <constraint firstItem="z8B-La-bTX" firstAttribute="leading" secondItem="EoM-xy-KWe" secondAttribute="leadingMargin" id="MHj-yJ-KZp"/>
@@ -216,7 +216,7 @@
                             <constraint firstItem="F8M-IL-bWo" firstAttribute="top" secondItem="eSa-wr-F0j" secondAttribute="top" constant="7" id="aWf-gl-3PV"/>
                             <constraint firstItem="xat-cm-19j" firstAttribute="top" secondItem="z8B-La-bTX" secondAttribute="bottom" constant="18" id="bRC-4c-MA2"/>
                             <constraint firstItem="Vrf-CK-eyQ" firstAttribute="leading" secondItem="eSa-wr-F0j" secondAttribute="leading" id="dds-9W-7NI"/>
-                            <constraint firstItem="U3t-wK-d5o" firstAttribute="leading" secondItem="eSa-wr-F0j" secondAttribute="leading" constant="129" id="fFW-BH-LVc"/>
+                            <constraint firstItem="U3t-wK-d5o" firstAttribute="leading" secondItem="eSa-wr-F0j" secondAttribute="leading" constant="87" id="fFW-BH-LVc"/>
                             <constraint firstItem="z8B-La-bTX" firstAttribute="trailing" secondItem="C09-Be-JP9" secondAttribute="trailing" id="iJC-kJ-dJY"/>
                             <constraint firstItem="F8M-IL-bWo" firstAttribute="leading" secondItem="eSa-wr-F0j" secondAttribute="leading" constant="87" id="mR6-ed-dtK"/>
                             <constraint firstItem="z8B-La-bTX" firstAttribute="leading" secondItem="C09-Be-JP9" secondAttribute="leading" id="qw5-nl-Ire"/>
@@ -243,7 +243,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2066" y="-356"/>
+            <point key="canvasLocation" x="2064.8000000000002" y="-356.67166416791605"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C7Y-bj-QNE">
