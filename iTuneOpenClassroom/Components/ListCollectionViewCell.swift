@@ -2,8 +2,8 @@
 //  ListCollectionViewCell.swift
 //  iTunesApple
 //
-//  Created by Emil Vaklinov on 01/08/2019.
-//  Copyright © 2019 project. All rights reserved.
+//  Created by Emil Vaklinov on 12/03/2020.
+//  Copyright © 2020 project. All rights reserved.
 //
 
 import Foundation
